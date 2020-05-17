@@ -1,0 +1,66 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,600;0,900;1,300&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<style>
+    ::selection {
+        background-color: #00ef65;
+    }
+    body {
+        color: white;
+        background-color: black;
+    }
+    fieldset {
+        border: 3px solid #49CF00;
+        border-radius: 10px;
+        margin: 5px;
+    }
+    button {
+        background-color: #49CF00;
+        color: white;
+        padding: 16px;
+        border: 2px solid #8DFF4E;
+        border-radius: 5px;
+        outline: none;
+    }
+    button:hover {
+        background-color: #8DFF4E;
+        border: 2px solid #49CF00;
+        color: black;
+    }
+    img {
+        width: 100%;
+        margin: 5px;
+    }
+    .grid2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .grid3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .grid4 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .grid5 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: 600px) {
+        nav a {
+            display: block;
+        }
+        .grid2, .grid3, .grid4, .grid5 {
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+
+</body>
+</html>

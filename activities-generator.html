@@ -1,0 +1,58 @@
+<h2>Activities for Quarantine</h2>
+        <button onclick="generateActivities()">
+            Generate a random activity!
+        </button>
+        <div id="ActivityDisplay" style="color:white"></div>
+
+<script>
+var activities = [
+    'Actually study',
+    "Compete in the next week's Hackathon!",
+    'Learn to code!',
+    'Play a board game!',
+    'Put together an epic puzzle!',
+    'Have a Netflix marathon!',
+    'Hug one gadget of yours!',
+    'Sing along to Disney songs!',
+    'Learn a new recipe and have that dish for your next meal!',
+    'Have a 15-min workout!',
+    'Write a letter!',
+    'Call a friend!',
+    'Watch bowling!',
+    'Start learning a new language!',
+    'Daydream for 5 minutes!',
+    'Have a dance party with your friends via Facetime!',
+    'Play a video game',
+    'Read a book!',
+    'Sketch your cactus! (a random cactus off of Internet will do too.',
+    'Paint your last meal!',
+    'Continue clicking on the button ;)',
+    'Bake a cake!',
+    'Become a TikTok star!',
+    'Do a face mask. Never too late to take care of your skin!',
+    'Do some yoga!',
+    'Do Zumba!',
+    'Clean your room!',
+    'Organize your kitchen',
+    'Start a garden',
+    'Go for a short walk! Remember social distancing rules though ;)',
+    "Send out Christmas cards (even if it isn't Christmas)",
+    'Have a cardboard race car',
+    'Learn a TikTok dance',
+    'Start your own business',
+    'Play Minecraft',
+    'Collect and paint rocks',
+    'Have a scavenger hunt',
+    'Watch the sunset',
+    'Throw an indoor picnic',
+    'Have a karaoke party',
+    'Complete a TikTok challenge',
+    'Watch a TV show',
+    'Watch a movie',
+    'Drink some water'
+  ]
+  function generateActivities() {
+    var randomNumber = Math.floor(Math.random() * activities.length);
+    document.getElementById('ActivityDisplay').innerHTML = activities[randomNumber];
+  }
+</script>
